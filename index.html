@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container bg-dark d-flex flex-column justify-content-center align-items-center pb-5 pt-5 gap-3 rounded-2">
+<h1 class="fs-1 fst-italic fw-bold text-light">FreeCodeCamp</h1>
+<div class="container-btn d-flex justify-content-center align-items-center gap-5">
+    <div>
+        <h6 class="text-light text-uppercase btn" id="break-length">break length</h6>
+        <div class="d-flex justify-content-center align-items-center gap-3"> 
+        <button class="bg-dark border-0 text-light fs-3" id="break-decrem">-</button>
+        <h3 class="text-light" id="break-value">5</h3>
+        <button class="bg-dark border-0 text-light fs-3" id="break-increm">+</button>
+        </div>
+        
+    </div>
+     <div>
+        <h6 class="text-light text-uppercase btn" id="session-length">session length</h6>
+        <div class="d-flex justify-content-center align-items-center gap-3">
+        <button class="bg-dark border-0 text-light fs-3" id="session-decrem">-</button>
+        <h3 class="text-light" id="session-value">25</h3>
+        <button class="bg-dark border-0 text-light fs-3" id="session-increm">+</button>
+        </div>
+       
+    </div>
+</div>
+<div class="border border-success p-5 border-5 rounded-circle d-flex flex-column justify-content-center align-items-center gap-3 btn" id="timer-start">
+    <h2 class="text-light" id="length"></h2>
+    <h2 class="text-light" id="timer">25</h2>
+</div>
+
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
